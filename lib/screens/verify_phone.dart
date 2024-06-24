@@ -1,10 +1,9 @@
+import 'package:doctorlive/supabase_auth_ui/components/supa_verify_phone.dart';
 import 'package:flutter/material.dart';
-import 'package:supabase_auth_ui/supabase_auth_ui.dart';
-
 import 'constants.dart';
 
 class VerifyPhone extends StatelessWidget {
-  const VerifyPhone({Key? key}) : super(key: key);
+  const VerifyPhone({super.key});
 
   @override
   Widget build(BuildContext context) {

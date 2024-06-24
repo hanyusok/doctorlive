@@ -1,10 +1,9 @@
+import 'package:doctorlive/supabase_auth_ui/supabase_auth_ui.dart';
 import 'package:flutter/material.dart';
-import 'package:supabase_auth_ui/supabase_auth_ui.dart';
-
 import 'constants.dart';
 
 class UpdatePassword extends StatelessWidget {
-  const UpdatePassword({Key? key}) : super(key: key);
+  const UpdatePassword({super.key});
 
   @override
   Widget build(BuildContext context) {

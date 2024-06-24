@@ -1,10 +1,11 @@
+import 'package:doctorlive/supabase_auth_ui/components/supa_magic_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import 'constants.dart';
 
 class MagicLink extends StatelessWidget {
-  const MagicLink({Key? key}) : super(key: key);
+  const MagicLink({super.key});
 
   @override
   Widget build(BuildContext context) {

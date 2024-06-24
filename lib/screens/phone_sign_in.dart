@@ -1,10 +1,12 @@
+import 'package:doctorlive/supabase_auth_ui/components/supa_phone_auth.dart';
+import 'package:doctorlive/supabase_auth_ui/utils/supa_auth_action.dart';
 import 'package:flutter/material.dart';
-import 'package:supabase_auth_ui/supabase_auth_ui.dart';
+
 
 import 'constants.dart';
 
 class PhoneSignIn extends StatelessWidget {
-  const PhoneSignIn({Key? key}) : super(key: key);
+  const PhoneSignIn({super.key});
 
   @override
   Widget build(BuildContext context) {

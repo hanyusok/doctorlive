@@ -1,6 +1,14 @@
+import 'package:doctorlive/screens/home.dart';
+import 'package:doctorlive/screens/magic_link.dart';
+import 'package:doctorlive/screens/phone_sign_in.dart';
+import 'package:doctorlive/screens/phone_sign_up.dart';
+import 'package:doctorlive/screens/sign_in.dart';
+import 'package:doctorlive/screens/update_password.dart';
+import 'package:doctorlive/screens/verify_phone.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,18 +28,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Doctor live',
       theme: ThemeData(
+        inputDecorationTheme: const InputDecorationTheme(border: OutlineInputBorder()),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-      ),
-      home: const MyWidget(),
+      ),      
       initialRoute: '/',
       routes: {
         '/': (context) => const SignUp(),
         '/magic_link': (context) => const MagicLink(),
         '/update_password': (context) => const UpdatePassword(),
-        // '/phone_sign_in': (context) => const PhoneSignIn(),
-        // '/phone_sign_up': (context) => const PhoneSignUp(),
-        // '/verify_phone': (context) => const VerifyPhone(),
+        '/phone_sign_in': (context) => const PhoneSignIn(),
+        '/phone_sign_up': (context) => const PhoneSignUp(),
+        '/verify_phone': (context) => const VerifyPhone(),
         '/home': (context) => const Home(),
       },
       onUnknownRoute: (RouteSettings settings) {
